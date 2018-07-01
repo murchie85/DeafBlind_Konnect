@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         String message = editText.getText().toString();
         if (message.length() > 0) {
             scaledrone.publish(roomName, message);
-            editText.getText().clear();
+            editText.getText().clear(); // clear out message
         }
     }
 
@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
     }
 }
 
+// this is the name and color the others will see you by
 class MemberData {
     private String name;
     private String color;

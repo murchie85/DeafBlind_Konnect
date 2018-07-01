@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         });
     }
 
+    // message goes to scaledrone - they take care of it
     public void sendMessage(View view) {
         String message = editText.getText().toString();
         if (message.length() > 0) {
